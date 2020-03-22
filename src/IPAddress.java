@@ -59,5 +59,12 @@ public class IPAddress {
 	public String[] getMaskBinary() {
 		return maskBinary;
 	}
+	public String getAddressBinaryString() {
+		return addressBinary[0]+"."+addressBinary[1]+"."+addressBinary[2]+"."+addressBinary[3];
+	}
+	
+	public String getMaskBinaryString() {
+		return maskBinary[0]+"."+maskBinary[1]+"."+maskBinary[2]+"."+maskBinary[3];
+	}
 	
 }

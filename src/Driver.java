@@ -11,10 +11,12 @@ public class Driver {
 	IPAddress ad3 = new IPAddress("192.53.40.7");
 	IPAddress ad4 = new IPAddress("192.53.56.7");
 	
-	System.out.println(ad.getAddressString());
-	System.out.println(t.getHop(t.router(ad)));
-	System.out.println(t.getAddress(t.router(ad)));
-	
+	System.out.println(ad.getAddressString());//get Address String that will be routed 
+	System.out.println(t.router(ad));//Get index of routing path.
+	System.out.println(t.getHop(t.router(ad)));//get Hop 
+	System.out.println(t.getAddress(t.router(ad)).getAddressString());//Get Address String
+	System.out.println(t.getAddress(t.router(ad)).getAddressBinaryString());//Get Address Binary
+	System.out.println(t.getAddress(t.router(ad)).getMaskBinaryString());//Get Mask Binary
 		
 	}
 }
